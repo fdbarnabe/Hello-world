@@ -1,4 +1,5 @@
-nome = input("Escreva o seu nome : ")
-idade = input("Escreva sua idade : ")
-print("Ola "+ nome)
-print("O(a) "+ nome +" possui "+ idade +" anos")
+variavel_nome = input("Escreva o seu nome : ")
+print("Ola "+ variavel_nome)
+
+variavel_idade = input("Escreva sua idade : ")
+print("O(a) "+ variavel_nome + " possui "+ variavel_idade +" anos")
