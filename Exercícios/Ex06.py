@@ -1,5 +1,5 @@
 valor_total = float(input("Digite o valor total: "))
-Porcentagem = float(input("Digite o valor de desconto: "))
+Porcentagem = float(input("Digite a Porcentagem de desconto: "))
 desconto = float((valor_total)*(Porcentagem/100))
 valor_total_com_desconto = (valor_total - desconto)
 print(f"O valor total é: R$ {valor_total}")
