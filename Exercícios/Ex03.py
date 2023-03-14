@@ -1,0 +1,6 @@
+a = int(input("Digite um numero: "))
+b = int(input("Digite um numero: "))
+print(f"A soma de {a} + {b} = {a+b}")
+print(f"A multiplicação de {a} * {b} = {a*b}")
+print(f"A subtração de {a} - {b} = {a-b}")
+print(f"A divisão de {a} / {b} = {a/b}")
