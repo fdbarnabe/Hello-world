@@ -1,15 +1,15 @@
 peso = float(input("Peso: "))
 altura = float(input("Altura: "))
 IMC = peso/(altura*altura);
-if IMC <= 18.5:
+if IMC <= 18.6:
     print(f"O seu IMC é {IMC} - Abaixo do Peso")
-elif IMC > 18.5 and IMC <= 24.9:
+elif IMC >= 18.6 and IMC < 25.0:
     print(f"O seu IMC é {IMC} - Saudavel")
-elif IMC > 24.9 and IMC <= 29.9:
+elif IMC >= 25.0 and IMC < 30.0:
     print(f"O seu IMC é {IMC} - Peso em excesso")
-elif IMC > 29.9 and IMC <= 34.9:
+elif IMC >= 30.0 and IMC < 35.0:
     print(f"O seu IMC é {IMC} - Obesidade Grau I")
-elif IMC > 34.9 and IMC <= 39.9:
+elif IMC >= 35.0 and IMC < 40.0:
     print(f"O seu IMC é {IMC} - Obesidade Grau II(severa)")
 else:
     print(f"O seu IMC é {IMC} - Obesidade Grau III(morbida)")
