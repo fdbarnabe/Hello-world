@@ -1,0 +1,5 @@
+A = str(input())
+B = float(input())
+C = float(input())
+salary = B+(C*(15/100))
+print(f"TOTAL = R$ {salary:.2f}")
