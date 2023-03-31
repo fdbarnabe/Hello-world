@@ -1,0 +1,6 @@
+a = str(input()).strip()
+b = (a).title()
+c = b.split(" ")
+print(f"{b}")
+print(f"Primeiro: {c[0]}")
+print(f"Segundo: {c[-1]}")
