@@ -1,57 +1,40 @@
 import random
-print("-=-"*10)
-print(f" Game JOKENPÔ ")
-print("-=-"*10)
-print(f"""Suas Opções:
-[ 1 ] Pedra
-[ 2 ] Papel
-[ 3 ] Tesoura""")
-      
-print(f"-=-"*10)
 
-a = int(input())
+def exibe_cabecalho():
+    print("-=-" * 10)
+    print(" Game JOKENPÔ ")
+    print("-=-" * 10)
 
-print(f"-=-"*10)
+def exibe_opcoes(options):
+    print("Suas Opções:")
+    for option in options:
+        print(f"[ {option} ] {options[option]}")
 
+def jogada(options):
+    while True:
+        a = int(input("Digite sua jogada: "))
+        if a in options:
+            return a
+        print("Opção Inválida.")
+
+def exibe_opcoes(a, pc, options):
+    print(f"Você escolheu {options[a]}")
+    print(f"Computador escolheu {options[pc]}")
+    print("-=-" * 10)
+
+def exibe_saida(a, pc):
+    if a == pc:
+        print("Empate")
+    elif (a == 1 and pc == 3) or (a == 2 and pc == 1) or (a == 3 and pc == 2):
+        print("Você Ganhou.")
+    else:
+        print("Você Perdeu.")
+
+options = {1: "Pedra", 2: "Papel", 3: "Tesoura"}
+exibe_cabecalho()
+exibe_opcoes(options)
+a = jogada(options)
 pc = random.randint(1, 3)
-if a == 1:
-    print(f"Você escolheu Pedra")
-elif a == 2:
-    print(f"Você escolheu Papel")
-elif a == 3:
-    print(f"Você escolheu Tesoura")
-else:
-    print(f"Opção Inválida.")
+exibe_opcoes(a, pc, options)
+exibe_saida(a, pc)
 
-if 0 < a > 3:
-    print(f"Opção Inválida.")
-elif pc == 1:
-    print(f"Computador escolheu Pedra")
-elif pc == 2:
-    print(f"Computador escolheu Papel")
-elif pc == 3:
-    print(f"Computador escolheu Tesoura")
-
-print(f"-=-"*10)
-
-if a == 1:
-    if a == pc:
-        print(f"Empate")
-    elif pc == 3:
-        print(f"Você Ganhou.")
-    elif pc == 2:
-        print(f"Você Perdeu.")
-if a == 2:
-    if a == pc:
-        print(f"Empate")
-    elif pc == 3:
-        print(f"Você Perdeu.")
-    elif pc == 1:
-        print(f"Você Ganhou.")
-if a == 3:
-    if a == pc:
-        print(f"Empate")
-    elif pc == 2:
-        print(f"Você Ganhou.")
-    elif pc == 1:
-        print(f"Você Perdeu.")
