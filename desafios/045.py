@@ -17,7 +17,7 @@ def jogada(options):
             return a
         print("Opção Inválida.")
 
-def exibe_opcoes(a, pc, options):
+def exibe_opcoes_escolhidas(a, pc, options):
     print(f"Você escolheu {options[a]}")
     print(f"Computador escolheu {options[pc]}")
     print("-=-" * 10)
@@ -35,6 +35,6 @@ exibe_cabecalho()
 exibe_opcoes(options)
 a = jogada(options)
 pc = random.randint(1, 3)
-exibe_opcoes(a, pc, options)
+exibe_opcoes_escolhidas(a, pc, options)
 exibe_saida(a, pc)
 
