@@ -1,0 +1,5 @@
+frase = input()
+a = list(map(str,frase.split()))
+print(f"{a}")
+print(f"{len(frase)}")
+print(f"{len(a)}")
