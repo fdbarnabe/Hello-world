@@ -1,0 +1,37 @@
+user = {
+  "login": "fdbarnabe",
+  "id": 125517866,
+  "node_id": "U_kgDOB3tAKg",
+  "avatar_url": "https://avatars.githubusercontent.com/u/125517866?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/fdbarnabe",
+  "html_url": "https://github.com/fdbarnabe",
+  "followers_url": "https://api.github.com/users/fdbarnabe/followers",
+  "following_url": "https://api.github.com/users/fdbarnabe/following{/other_user}",
+  "gists_url": "https://api.github.com/users/fdbarnabe/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/fdbarnabe/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/fdbarnabe/subscriptions",
+  "organizations_url": "https://api.github.com/users/fdbarnabe/orgs",
+  "repos_url": "https://api.github.com/users/fdbarnabe/repos",
+  "events_url": "https://api.github.com/users/fdbarnabe/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/fdbarnabe/received_events",
+  "type": "User",
+  "site_admin": False,
+  "name": "Fernando Domingues",
+  "company": "",
+  "blog": "",
+  "location": "",
+  "email": "",
+  "hireable": "",
+  "bio": "",
+  "twitter_username": "",
+  "public_repos": 1,
+  "public_gists": 0,
+  "followers": 1,
+  "following": 1,
+  "created_at": "2023-02-15T23:33:47Z",
+  "updated_at": "2023-05-03T23:47:57Z"
+}
+
+for key in user.keys():
+    print(f"\033[1;34m{key} : \033[1;32m{user[key]}")
