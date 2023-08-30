@@ -1,2 +1,2 @@
-let box = document.getElementById("box");
-box.style.background = 'red';
+let box = document.getElementById("box-1");
+"box-1".style.background = 'red';
