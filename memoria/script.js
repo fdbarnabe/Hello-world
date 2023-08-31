@@ -22,15 +22,14 @@ function init() {
     }) */
     let container = document.getElementById("container");
     let box = document.createElement("div");
-    
-        for (let b=1; b<=13; b++){
-        box.className = "box";
-        box.id = 'box-' + b;
-        box.innerText = b;
-    
-    }
-    n++;
-    }
+    box.className = "box";
+    box.id = 'box-1';
+    box.innerText = 1;
+    container.appendChild(box);
+
+}
+
+init()
     
 
 
