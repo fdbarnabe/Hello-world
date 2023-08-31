@@ -22,8 +22,7 @@ function init() {
     }) */
     let container = document.getElementById("container");
     let box = document.createElement("div");
-    let n=0;
-    while ( n <=13 ){
+    
         for (let b=1; b<=13; b++){
         box.className = "box";
         box.id = 'box-' + b;
@@ -33,6 +32,6 @@ function init() {
     n++;
     }
     
-}
+
 
 init()
