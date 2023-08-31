@@ -13,13 +13,6 @@ function changeColor(id) {
 
 function init() {
     const quantity = 13;
-    /* let boxes = document.getElementsByClassName("box");
-
-    Object.values(boxes).forEach((item, index) => {
-        console.log(item, index);
-        console.log(item.id);
-        item.onclick = () => changeColor(item.id);
-    }) */
     let container = document.getElementById("container");
     let box = document.createElement("div");
     box.className = "box";
@@ -31,6 +24,3 @@ function init() {
 
 init()
     
-
-
-init()
