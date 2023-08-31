@@ -28,7 +28,7 @@ function init() {
         box.className = "box";
         box.id = 'box-' + b;
         box.innerText = b;
-        container.appendChild(box);
+    
     }
     n++;
     }
