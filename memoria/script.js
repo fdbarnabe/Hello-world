@@ -13,13 +13,15 @@ function changeColor(id) {
 
 function init() {
     const quantity = 13;
-    let container = document.getElementById("container");
-    let box = document.createElement("div");
-    box.className = "box";
-    box.id = 'box-1';
-    box.innerText = 1;
-    container.appendChild(box);
+    for (let i = 1; i <= 13; i++) { 
+        let container = document.getElementById("container");
+        let box = document.createElement("div");
+        box.className = "box";
+        box.id = 'box-' + i;
+        box.innerText = i;
+        container.appendChild(box);
 
+}
 }
 
 init()
