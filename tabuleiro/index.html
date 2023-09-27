@@ -9,10 +9,10 @@
 <body>
     <div class="container flex-center">
         <div class="tabuleiro">
-            <div id="carta-1" class="carta carta-virada flex-center" onclick="virarCarta('carta-1')">1</div>
-            <div id="carta-2" class="carta flex-center" onclick="virarCarta('carta-2')">2</div>
-            <div id="carta-3" class="carta flex-center" onclick="virarCarta('carta-3')">3</div>
-            <div id="carta-4" class="carta flex-center" onclick="virarCarta('carta-4')">4</div>
+            <div data-par="carta-1"  id="carta-1" class="carta flex-center" onclick="virarCarta('carta-1')">1</div>
+            <div data-par="carta-1"  id="carta-2" class="carta flex-center" onclick="virarCarta('carta-2')">1</div>
+            <div data-par="carta-3"  id="carta-3" class="carta flex-center" onclick="virarCarta('carta-3')">3</div>
+            <div data-par="carta-3"  id="carta-4" class="carta flex-center" onclick="virarCarta('carta-4')">3</div>
         </div>
     </div>
     <script src="./script.js"></script>

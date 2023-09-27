@@ -31,3 +31,7 @@ html,body{
 .carta-virada{
     background:pink;
 }
+
+.carta-par{
+    background:green;
+}
