@@ -6,7 +6,16 @@
         let lista = document.createElement("div");
         
         let container = document.createElement("container");
-        container.innerText = "Olá, eu sou o Fernando!";
+        container.className = "container";
+        container.id = "container";
+        
+        let box = document.createElement("box");
+        box.className = "box";
+        box.id = "box";
+        
+        
+        container.appendChild(box);
+        
         lista.appendChild(container);
 
         let body = document.getElementsByTagName("body")[0];
