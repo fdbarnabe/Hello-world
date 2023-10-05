@@ -6,12 +6,11 @@
         let lista = document.createElement("div");
         
         let container = document.createElement("container");
-        container.style.width = "500px";
-        container.style.height = "500px";  
+        let box = document.createElement("div");
         container.style.display = "flex";
         container.style.justifyContent = "center";
-        container.style.alignSelf = "center"; 
-        let box = document.createElement("div");
+        container.style.alignItems = "center"; 
+        box.style.background = "red";
         box.style.width = "100px";
         box.style.height = "100px";  
         lista.appendChild(box);
