@@ -4,19 +4,15 @@
 
     <script>
         let lista = document.createElement("div");
-               
-        let box = document.createElement("box");
-        box.display = "flex";
-        box.justifyContent = "center";
-        box.alignItems = "center";
-        lista.appendChild(box);
         
-
-        let box = document.createElement("div");
-        box.style.background = "red";
-        box.style.width = "100px";
-        box.style.height = "100px";  
-        lista.appendChild(box);
+        let container = document.createElement("container");
+        container.style.background = "red";
+        container.style.display = "flex";
+        container.style.justifyContent = "center";
+        container.style.alignSelf = "center"; 
+        container.style.width = "100px";
+        container.style.height = "100px";  
+        lista.appendChild(container);
 
         let body = document.getElementsByTagName("body")[0];
         body.appendChild(lista);
