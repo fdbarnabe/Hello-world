@@ -4,11 +4,14 @@
 
     <script>
         let lista = document.createElement("div");
-        div.style.display = "flex";
-        div.style.justifyContent = "center";
-        div.style.alignItems = "center"; 
+               
         let container = document.createElement("container");
-              
+        container.display = "flex";
+        container.justifyContent = "center";
+        container.alignItems = "center";
+        lista.appendChild(container);
+
+        let box = document.createElement("box");
         box.style.background = "red";
         box.style.width = "100px";
         box.style.height = "100px";  
