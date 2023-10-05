@@ -5,22 +5,22 @@
     <script>
         let lista = document.createElement("div");
                
-        let container = document.createElement("container");
-        container.display = "flex";
-        container.justifyContent = "center";
-        container.alignItems = "center";
-        container.style.width = "100%";
-        container.style.height = "100%"; 
-        lista.appendChild(container);
+        let box = document.createElement("box");
+        box.display = "flex";
+        box.justifyContent = "center";
+        box.alignItems = "center";
+        box.style.width = "100%";
+        box.style.height = "100%"; 
+        lista.appendChild(box);
         
 
-        let box = document.createElement("box");
+        let box = document.createElement("div");
         box.style.background = "red";
         box.style.width = "100px";
         box.style.height = "100px";  
         lista.appendChild(box);
 
-        let body = document.getElementsByTagName("body");
+        let body = document.getElementsByTagName("body")[0];
         body.appendChild(lista);
 
 
