@@ -9,7 +9,10 @@
         container.display = "flex";
         container.justifyContent = "center";
         container.alignItems = "center";
+        container.style.width = "100%";
+        container.style.height = "100%"; 
         lista.appendChild(container);
+        
 
         let box = document.createElement("box");
         box.style.background = "red";
@@ -17,7 +20,7 @@
         box.style.height = "100px";  
         lista.appendChild(box);
 
-        let body = document.getElementsByTagName("body")[0];
+        let body = document.getElementsByTagName("body");
         body.appendChild(lista);
 
 
