@@ -6,16 +6,12 @@
         let lista = document.createElement("div");
         
         let container = document.createElement("container");
-        container.className = "container";
-        container.id = "container";
-        
-        let box = document.createElement("box");
-        box.className = "box";
-        box.id = "box";
-        
-        
-        container.appendChild(box);
-        
+        container.style.background = "red";
+        container.style.display = "flex";
+        container.style.justifyContent = "center";
+        container.style.alignSelf = "center"; 
+        container.style.width = "100px";
+        container.style.height = "100px";  
         lista.appendChild(container);
 
         let body = document.getElementsByTagName("body")[0];
